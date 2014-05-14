@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AddPolygonMutationRate>700</AddPolygonMutationRate>
+  <RemovePolygonMutationRate>1500</RemovePolygonMutationRate>
+  <MovePolygonMutationRate>700</MovePolygonMutationRate>
+  <AddPointMutationRate>1500</AddPointMutationRate>
+  <RemovePointMutationRate>1500</RemovePointMutationRate>
+  <MovePointMaxMutationRate>1500</MovePointMaxMutationRate>
+  <MovePointMidMutationRate>1500</MovePointMidMutationRate>
+  <MovePointMinMutationRate>1500</MovePointMinMutationRate>
+  <RedMutationRate>1500</RedMutationRate>
+  <GreenMutationRate>1500</GreenMutationRate>
+  <BlueMutationRate>1500</BlueMutationRate>
+  <AlphaMutationRate>1500</AlphaMutationRate>
+  <RedRangeMin>0</RedRangeMin>
+  <RedRangeMax>255</RedRangeMax>
+  <GreenRangeMin>0</GreenRangeMin>
+  <GreenRangeMax>255</GreenRangeMax>
+  <BlueRangeMin>0</BlueRangeMin>
+  <BlueRangeMax>255</BlueRangeMax>
+  <AlphaRangeMin>30</AlphaRangeMin>
+  <AlphaRangeMax>60</AlphaRangeMax>
+  <PolygonsMin>0</PolygonsMin>
+  <PolygonsMax>255</PolygonsMax>
+  <PointsPerPolygonMin>3</PointsPerPolygonMin>
+  <PointsPerPolygonMax>10</PointsPerPolygonMax>
+  <PointsMin>0</PointsMin>
+  <PointsMax>1500</PointsMax>
+  <MovePointRangeMin>3</MovePointRangeMin>
+  <MovePointRangeMid>20</MovePointRangeMid>
+</Settings>

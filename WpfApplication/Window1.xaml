@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApplication.Window1" Title="Genetic DNA Viewer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="400" Width="800"
+        Background="Black">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open"
+                  Executed="OpenCommandExecuted"
+                  CanExecute="OpenCommandCanExecute" />
+        <CommandBinding Command="ApplicationCommands.Close"
+                  Executed="CloseCommandExecuted"
+                  CanExecute="CloseCommandCanExecute" />
+        <CommandBinding Command="ApplicationCommands.Save"
+                  Executed="SaveCommandExecuted"
+                  CanExecute="SaveCommandCanExecute" />
+    </Window.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Menu Grid.ColumnSpan="2" Grid.Row="0">
+            <MenuItem Name="FileMenu" Header="_File" >
+                <MenuItem Name="FileOpen" Command="ApplicationCommands.Open"  />
+                <MenuItem Name="FileSave" Command="ApplicationCommands.Save" />
+                <Separator/>
+                <MenuItem Name="FileExit" Header="E_xit" Command="ApplicationCommands.Close" />
+            </MenuItem>
+        </Menu>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Foreground="White" Margin="4 3 0 0">Canvas / Shapes</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" Foreground="White" Margin="4 3 0 0">Bitmap</TextBlock>
+        
+        <Canvas Grid.Column="0" Grid.Row="2" x:Name="EvoCanvas">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Image Grid.Column="1" Grid.Row="2" x:Name="EvoImage" />
+    </Grid>
+</Window>
